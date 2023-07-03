@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 图像标签的使用： 
+        属性 属性值 说明
+        src 图片路径 必须属性
+        alt 文本 替换文本。图像不能显示的文字
+        title 文本 提示文本。鼠标放到图像上，显示的文字
+        width 像素 设置图像的宽度
+        height 像素 设置图像的高度
+        border 像素 设置图像的边框粗细
+        1.标签可以拥有多个属性，必须写在标签名的后面
+        2.属性之间不分先后顺序，边签名与属性，属性与属性之间均以空格分开
+        3.属性采取键值对的形式 key='value' 属性='属性值'-->
+    <h4>图像标签的使用：</h4>
+    <img src="images/img.jpg" alt="" height="300">
+    <h4>alt：替换文本，图像显示不出来的时候用文本替换。  title提示文本</h4>
+    <!-- 宽度和高度一般只设置一个，另一个会自动等比例缩放 -->
+    <img src="images/img.jpg" alt="我是pink老师" title="我是pink老师的提示文本" width="400" border="15">
+    <img src="images/img.jpg" alt="我是pink老师" title="我是pink老师的提示文本" width="400">
+
+    <!-- 路径
+    1.相对路径：以引用文件所在位置为参考基础，而建立出来的目录路径 简单来说，就是图片相对于html页面的位置
+      同级路径  直接输入文件名称 src="img.jpg" 
+      上一级路径 ../    图像位于html上一级  src="../images/img.jpg" 
+      下一级路径  /     图像位于html下一级 src="images/img.jpg" 
+    2.绝对路径 （很少使用）
+       在电脑中的位置-->
+       <h5>绝对路径</h5>
+       <img src="/Users/jsy/Documents/练习项目/黑马pink/html/images/img.jpg" alt="我是pink老师" title="我是pink老师的提示文本" width="400">
+       <img src="https://n.sinaimg.cn/sinakd10106/399/w1200h799/20221204/3566-3136376815d732247c9caf9d6dd7be28.jpg" alt="我是pink老师" title="我是pink老师的提示文本" width="400">
+</body>
+</html>
