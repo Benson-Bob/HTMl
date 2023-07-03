@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        /* 字体属性包括，自定义字体系列，大小，粗细，和文字样式（斜体） */
+         /* font-size 字体大小
+            统一设置用body设置的font-size 优先级最低 
+            标题标签不起作用，必须单独设置*/
+            body {
+            font-size: 12px;
+        }
+        /* h2 不起作用，所以要单独设置 */
+        /* 标题标签比较特殊，需要单独设置字体大小 
+        normal 正常 相当于 number 为400
+            bold 粗体，相当于number为700
+            bolder 特粗体
+            lighter 细体
+            number 100 ｜200 ｜300 ｜400｜ 500 ｜ 600 ｜700 ｜ 800 ｜ 900
+            */
+        h2 {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        /* font-weight字体的粗细 */
+        /* 实际开发中我们一般使用数字表示数字的粗细 */
+        .bold {
+            font-weight: bold;
+        }
+        /* font-style设置文本的风格 
+        normal 正常
+        italic 斜体*/
+        .english {
+            font-style: italic;
+        }
+        em {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h2>号撒拉黑了</h2>
+    <p class="english">sdfhsdhf </p>
+    <p>dsfhdskfh</p>
+    <em class="xieti">我是斜体标题</em>
+    <p class="bold">的房间里的时候</p>
+    <p>婚纱礼服婚纱返回</p>
+</body>
+</html>

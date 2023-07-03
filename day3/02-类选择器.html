@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器 */
+        /* 样式点定义，结构类调用，（class）一个或多个，开发最常用 */
+        /* 1 类选择器使用.进行标识，后面紧跟类名 */
+        /* 2 可以理解为给这个标签起一个名字，来表示*/
+        /* 3 长名称或词组可以使用-中横线来为选择器命名 */
+        /* 4 不要使用纯数字，中文等命名，使用英文字母来表示 */
+        /* 5 命名要有意义，尽量使别人一眼就知道这个类名的目的 */
+
+        /* class中可以指定多个类名 */
+        /* 多类名之间用空格分开 */
+        /* 1 可以把一些标签元素相同的样式（公共的部分）放到一个类里面*/
+        /* 2 这些标签都可以调用这个公共的类，然后再调用自己独有的类*/
+        /* 3 从而节省css代码，统一修改也非常方便*/
+        .red {
+            background-color: red;
+            color: white;
+        }
+        .blue {
+            color: blue;
+        }
+        .green {
+            background-color: green;
+            color: white;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            font-size: 38px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="">冰雨</li>
+        <li class="blue">黑马</li>
+        <li>白色</li>
+        <div class="red box">红色</div>
+        <div class="green box">绿色</div>
+        <div class="red box">红色</div>
+    </ul>
+</body>
+</html>

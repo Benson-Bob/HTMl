@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css引入方式
+    1.行内样式表 行内式
+    2.内部样式表 嵌入式 把css样式写到html内部 单独放到style标签里面
+    3.外部样式表 链接式 适合样式比较对的情况，样式单独写到css中，再把css引入到html页面使用
+    -->
+    <style>
+        /* 内部样式表 理论上可用放到html标签的任何地方，一般放在head标签里面 */
+        div {
+            color: red;
+        }
+    </style>
+    <!-- 关联样式表 stylesheet 样式表位置href="style.css“-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 行内样式表 控制当前样式-->
+    <p style="color: yellow">ni hao </p>
+    <div class="pink">pink</div>
+</body>
+</html>
