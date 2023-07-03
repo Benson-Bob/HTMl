@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 使用表单为了收集用户信息 -->
+    <!-- 一个表单由表单域，表单控件（也称表单元素）和提示信息三个部分构成 -->
+    <!-- 表单域是一个包含表单元素的的区域
+    在html标签中 <form action=""></form>用于定义表单域，以实现用户信息的收集和传递 form会把表的元素的值传到后台-->
+    <!-- <form action="地址" method="提交方式" name="表单域的名称"></form> -->
+    <!-- <input type="text"> 文本格式  单标签-->
+    <!-- 一共有 text、password、number、button、reset、submit、
+    hidden、radio、checkbox、file、image、color、range、
+    date、month、week、time、datetime-local。23种类型 -->
+    <!-- <br> <br/> html5两种一样的 -->
+    <!-- checked 默认选中 -->
+    <!-- maxlength 最大长度 -->
+    <!-- name 用来区分表单元素  单选和复选需要用同一个name-->
+    <!-- type="submit" 将数据提交到后台 -->
+    <form action="demo.php" method="get" name="name1">
+        <!-- for 和 id 拥有同样一个属性 就能点击label唤起input标签 -->
+        <!-- label 标签为input元素定义标注 -->
+        <!-- label标签用于绑定一个表单元素，当点击label标签内的文本时，
+        浏览器会自动将焦点转到或者选择对应的表单元素上，用来增强用户体验 -->
+        <!-- 核心：label标签的for属性 应当与相关元素的id属性相同 -->
+        <label for="text">用户名：</label>
+        <input type="text" name="username" value="" maxlength="6" id="text"> <br>
+        <label for="password">密码：</label>
+        <input type="password" name="password" value="" id="password"> <br>
+        <!-- 单选按钮 -->
+        性别：<input type="radio" name="sex" value="男" checked id="nan"><label for="nan">男</label>
+        <input type="radio" name="sex" value="女" checked id="nv"><label for="nv">女</label>
+        <input type="radio" name="sex" value="人妖" checked="checked">人妖<br>
+        <!-- 多选 -->
+        爱好：<input type="checkbox" name="hobby" value="吃饭" checked="none">吃饭
+        <input type="checkbox" name="hobby" value="睡觉">睡觉
+        <input type="checkbox" name="hobby" value="打豆豆" checked=false>打豆豆 <br>
+        <input type="submit" value="免费注册">
+        <!-- 重置 -->
+        <input type="reset" value="重新填写">
+        <!-- 普通按钮 -->
+        <input type="button" value="获取短信验证码">
+        <!-- 上传头像 文件域 上传文件-->
+        <input type="file">
+    </form>
+</body>
+
+</html>

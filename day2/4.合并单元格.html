@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 特殊情况下我们可以把多个单元格合并为一个单元格
+    1  合并单元格的方式
+    2，目标单元格
+    3.合并单元格的步骤-->
+     <!--   rowspan 跨行合并 
+            colspan 跨列合并 -->
+    <!-- 4.合并三部曲
+    1.确定跨行还是跨列
+    2.找到目标单元格，写上合并方式=合并的单元格数量比如：<td colspan='2'></td> 
+    3.删除多余的单元格    -->
+    <table border="1" width="500" height="249" cellspacing="0"  align="center">
+        <tr>
+            <th></th>
+            <th></th>
+            <!-- <th colspan="2"></th> -->
+
+        </tr>
+        <tr>
+            <th rowspan="2"></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+       
+    </table>
+</body>
+</html>
