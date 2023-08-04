@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS的背景 -->
+    <!-- 1.标签的背景颜色默认： background-color: transparent; 透明色 -->
+    <!-- 2.背景图片 background-image :url(../day2/duigou.png) 图片地址
+        实际开发中常见的logo或者一些装饰性的小图片或者大的背景图片
+        优点是非常便于控制位置（精灵图也是一种运用场景）-->
+    <!-- 3.background-repeat 设置平铺方式，默认no-repeat -->
+    <!-- 页面元素即可以添加背景颜色，也可以添加背景图片，背景图片在背景颜色上面 -->
+    <!-- 4.背景图片位置  background-position: x y ;
+        参数代表的意思是x坐标y坐标 可以使用方位名词或者精确单位
+        参数值：length 百分比 由浮点数字和单位标识符组成的 长度值
+        position 方位名词：top｜center｜bottom｜left｜right-->
+    <!-- 如果指定的两个值是方位名词，则两个值前后顺序无关 left top 和 top left 效果是一样的 -->
+    <!-- 如果只指定一个方位名词，另一个值省略，则，第二个值默认居中对齐 -->
+    <style>
+        div {
+            background-color: pink;
+            width: 400px;
+            height: 400px;
+            background-image: url(../day2/duigou.png);
+            /* 不平铺 */
+            background-repeat: no-repeat;
+            /* 沿着x轴平铺 */
+            /* background-repeat: repeat-x; */
+            /* 沿着y轴平铺 */
+            /* background-repeat: repeat-y; */
+            /* background-position: center top; */
+            /* background-position: top center; */
+            /* background-position: right center; */
+            background-position: center;
+        }
+
+        h3 {
+            width: 118px;
+            height: 40px;
+            /* background-color: pink; */
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(icon.png);
+            background-repeat: no-repeat;
+            background-position: -35px center;
+            /* text-indent: 1.5em; */
+            /* 内容向右偏移20px */
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <h3>成长守护平台</h3>
+</body>
+
+</html>

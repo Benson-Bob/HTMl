@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 优先级的注意点：
+    1.权重是有四位数字组成，但是永远不会有进位
+    2.可以理解为类选择器永远大于元素选择器。id选择器永远大于类选择器，以此类推
+    3.等级判断从左到右依次比较。如果某一位数值相同，则判断下一位数值
+    4.继承的权重是0，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是0
+    5.通配符和继承权重是0 ，标签选择器是1 类（伪类）选择器是10 id选择器是100 行内选择器是1000 !important无穷大-->
+    <style>
+        /* 父类的权重是100 id选择器*/
+        #father {
+            color: red;
+        }
+
+        /* p继承的权重是0 */
+        /* 所以我们看标签到底执行哪个样式， 就先看这个标签有没有被选出来*/
+        /* 元素选择器是0.0.0.1 */
+        p {
+            color: pink;
+        }
+
+        body {
+            color: red;
+
+        }
+
+        /* a链接浏览器默认指定类一个样式，蓝色的有下划线  所以body的颜色因为权重低，显示的还是blue*/
+        /* a {color: blue; } */
+        a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="father">
+        <p>你还是很好看</p>
+    </div>
+    <a href="#">我是单独的样式</a>
+</body>
+
+</html>

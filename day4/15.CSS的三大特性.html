@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css有三个非常重要的三个特性：层叠性 继承性 优先性 -->
+    <!-- 层叠性 ：样式冲突，遵循的原则是就近原则，哪个样式离结构近也就是说哪个样式写在后面，就执行哪个样式 
+                样式不冲突，不会层叠-->
+    <!-- 继承性： 子标签会继承父标签的某些样式，如文本颜色和字号 
+        text-  ,font- , line-  ,这些开头的都可以继承，以及color属性
+            不设置p的样式 它会继承div的颜色和字号 -->
+    <!-- 行高的继承 demo-->
+    <!-- CSS优先性  -->
+    <!-- 选择器相同，则执行层叠性  
+    优先级 选择器的全中如下-->
+    <!-- 选择器                     权重 -->
+    <!-- 继承或者*              0.0.0.0 -->
+    <!-- 元素选择器              0.0.0.1 -->
+    <!-- 类选择器，伪类选择器      0.0.1.0 -->
+    <!-- id选择器                0.1.0.0 -->
+    <!-- 行内样式style=“”         1.0.0.0 -->
+    <!-- ！important重要的          =无穷大-->
+
+    <style>
+        /* div {
+            color: rebeccapurple;
+            font-size: 12px;
+        }
+
+        div {
+            color: pink;
+        } */
+
+        body {
+            color: red;
+            /* font: 12px/20px 'Times New Roman', Times, serif; */
+            /* 这个1.5就是当前文字大小font-size 1.5倍 所以是21px*/
+            font: 12px/1.5 'Times New Roman', Times, serif;
+            /* 行高可以跟单位，也可以不跟单位，不跟单位表示font-size的倍数 */
+            /* font-size: 18px;
+            line-height: 50px; */
+        }
+
+        div {
+            /* 这个1.5就是当前文字大小font-size 1.5倍 所以是21px*/
+            font-size: 14px;
+        }
+
+        p {
+            /* 这个1.5就是当前文字大小font-size 1.5倍 所以是24px*/
+            font-size: 16px;
+        }
+
+        span {
+            color: pink !important;
+
+        }
+
+        .test {
+            color: blue;
+        }
+
+        #xxx {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>pink
+        <p>你真是个小机灵鬼</p>
+    </div> -->
+    <div>你是不是傻</div>
+    <p>你真是个小机灵鬼</p>
+    <ul>
+        <li>我没有指定文字大小</li>
+    </ul>
+
+    <span class="test" id="xxx" style="color: black;">你真是个小机灵鬼</span>
+</body>
+
+</html>

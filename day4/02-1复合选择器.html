@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 复合选择器由多个基础选择器组合而成 -->
+    <!-- 常用的复合选择器包括：后代选择器 子选择器 并集选择器 伪类选择器等等 -->
+    <!-- 1.后代选择器 -->
+    <!-- 后代选择器又称包含选择器，可以选择父元素里面子元素，其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔，当标签发生嵌套时，内层标签就成为外层标签的后代。 -->
+    <!-- 元素1 元素2 {样式} 中间用空格隔开 最后改的是后代-->
+    <style>
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li><a href="#">你是孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的的li</li>
+        <li>我是ul的的li</li>
+        <li>我是ul的的li</li>
+        <li>我是ul的的li</li>
+        <li><a href="#">不会变化</a></li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的的li</li>
+        <li>我是ul的的li</li>
+        <li><a href="#">不会变化</a></li>
+        <li><a href="#">不会变化</a></li>
+        <li><a href="#">不会变化</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css的背景图片 -->
+    <!-- 通过css背景属性，可以给页面添加背景样式 -->
+    <!-- 背景属性可以设置背景颜色，背景图片，背景平铺，背景图片位置，背景图像固定等 -->
+    <!-- 1.参数是方位名词 -->
+    <!-- 如果指定的两个值都是方位名词，则两个值前后顺序无关 -->
+    <!-- 如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐 -->
+    <!-- 2 参数是精确单位 -->
+    <!-- 如果参数是精确坐标，那么第一个肯定是x坐标， 第二个一定是y坐标 -->
+    <!-- 3 参数是混合单位 -->
+    <!-- 如果指定的两个值是精确单位和方位名词混合使用，则第一个值是x坐标，第二个值是y坐标 -->
+    <style>
+        div {
+            background-image: url("icon.png");
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            background-repeat: no-repeat;
+            /*精确单位： x 轴 20  y 轴 50  */
+            background-position: 20px 50px;
+            /*混合单位： 如果只指定一个值，那么指定的一定是x另一个值垂直居中 */
+            background-position: 50px;
+            /*混合单位： 则第一个值是x坐标，第二个值是y坐标 */
+            background-position: 50px bottom;
+            background-position: center 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
